@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace FACTURA_TEST1.ds {
+namespace FACTURA_APP.ds {
     
     
     /// <summary>
@@ -1193,7 +1193,7 @@ namespace FACTURA_TEST1.ds {
         }
     }
 }
-namespace FACTURA_TEST1.ds.Ds_VentasTableAdapters {
+namespace FACTURA_APP.ds.Ds_VentasTableAdapters {
     
     
     /// <summary>
@@ -1343,7 +1343,7 @@ namespace FACTURA_TEST1.ds.Ds_VentasTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::FACTURA_TEST1.Properties.Settings.Default.Factura_VentaConnectionString;
+            this._connection.ConnectionString = global::FACTURA_APP.Properties.Settings.Default.Factura_VentaConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1355,7 +1355,7 @@ namespace FACTURA_TEST1.ds.Ds_VentasTableAdapters {
             this._commandCollection[0].CommandText = "dbo.visualizar_factura";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@numFactura", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@numFactura", global::System.Data.SqlDbType.VarChar, 8, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

@@ -1,5 +1,5 @@
-﻿using FACTURA_TEST1.Formularios;
-using FACTURA_TEST1.Models;
+﻿using FACTURA_APP.Formularios;
+using FACTURA_APP.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FACTURA_TEST1
+namespace FACTURA_APP
 {
     public partial class frm_factura : Form
     {
@@ -189,10 +189,10 @@ namespace FACTURA_TEST1
                 textBox3.Text = calcularNumFactura();
                 MessageBox.Show("Factura ingresada correctamente...", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            catch (Exception)
-            {
-                //MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                throw;
+            catch (Exception ex)
+            {                
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+                throw new Exception("Error: " + ex.Message);
             }
         }
 
@@ -210,8 +210,7 @@ namespace FACTURA_TEST1
         private void limpiarProductosRegistrados()
         {
             cb_productoRegistrado.SelectedIndex = 0;
-            cb_ivaRegistrado.SelectedIndex = 0;
-            txt_precioRegistrado.Text = "0.00";
+            cb_ivaRegistrado.SelectedIndex = 0;            
             txt_cantidadRegistrado.Text = "0.00";
         }
         private void limpiarProductosNoRegistrados()

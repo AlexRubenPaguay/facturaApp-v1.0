@@ -1,4 +1,4 @@
-﻿namespace FACTURA_TEST1.Formularios
+﻿namespace FACTURA_APP.Formularios
 {
     partial class frm_reportes
     {
@@ -31,33 +31,16 @@
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_reportes));
-            this.visualizarfacturaBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.ds_Ventas = new FACTURA_TEST1.ds.Ds_Ventas();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_buscarFactura = new System.Windows.Forms.TextBox();
             this.btn_buscarFactura = new System.Windows.Forms.Button();
             this.reportviewer_factura = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.ds_Ventas = new FACTURA_APP.ds.Ds_Ventas();
             this.visualizarfacturaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.visualizar_facturaTableAdapter = new FACTURA_TEST1.ds.Ds_VentasTableAdapters.visualizar_facturaTableAdapter();
-            this.visualizar_facturaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.visualizarfacturaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.visualizarfacturaBindingSource2)).BeginInit();
+            this.visualizar_facturaTableAdapter = new FACTURA_APP.ds.Ds_VentasTableAdapters.visualizar_facturaTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.ds_Ventas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.visualizarfacturaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.visualizar_facturaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.visualizarfacturaBindingSource1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // visualizarfacturaBindingSource2
-            // 
-            this.visualizarfacturaBindingSource2.DataMember = "visualizar_factura";
-            this.visualizarfacturaBindingSource2.DataSource = this.ds_Ventas;
-            // 
-            // ds_Ventas
-            // 
-            this.ds_Ventas.DataSetName = "Ds_Ventas";
-            this.ds_Ventas.Locale = new System.Globalization.CultureInfo("es-EC");
-            this.ds_Ventas.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label1
             // 
@@ -91,15 +74,21 @@
             // reportviewer_factura
             // 
             reportDataSource1.Name = "Ds_Ventas";
-            reportDataSource1.Value = this.visualizarfacturaBindingSource2;
+            reportDataSource1.Value = this.visualizarfacturaBindingSource;
             this.reportviewer_factura.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportviewer_factura.LocalReport.ReportEmbeddedResource = "FACTURA_TEST1.Reportes.rpt_factura.rdlc";
+            this.reportviewer_factura.LocalReport.ReportEmbeddedResource = "FACTURA_APP.Reportes.rpt_factura.rdlc";
             this.reportviewer_factura.Location = new System.Drawing.Point(2, 93);
             this.reportviewer_factura.Name = "reportviewer_factura";
             this.reportviewer_factura.ServerReport.BearerToken = null;
             this.reportviewer_factura.Size = new System.Drawing.Size(1093, 511);
             this.reportviewer_factura.TabIndex = 3;
             this.reportviewer_factura.ZoomMode = Microsoft.Reporting.WinForms.ZoomMode.PageWidth;
+            // 
+            // ds_Ventas
+            // 
+            this.ds_Ventas.DataSetName = "Ds_Ventas";
+            this.ds_Ventas.Locale = new System.Globalization.CultureInfo("es-EC");
+            this.ds_Ventas.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // visualizarfacturaBindingSource
             // 
@@ -109,16 +98,6 @@
             // visualizar_facturaTableAdapter
             // 
             this.visualizar_facturaTableAdapter.ClearBeforeFill = true;
-            // 
-            // visualizar_facturaBindingSource
-            // 
-            this.visualizar_facturaBindingSource.DataMember = "visualizar_factura";
-            this.visualizar_facturaBindingSource.DataSource = this.ds_Ventas;
-            // 
-            // visualizarfacturaBindingSource1
-            // 
-            this.visualizarfacturaBindingSource1.DataMember = "visualizar_factura";
-            this.visualizarfacturaBindingSource1.DataSource = this.ds_Ventas;
             // 
             // frm_reportes
             // 
@@ -134,11 +113,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reportes";
             this.Load += new System.EventHandler(this.Reportes_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.visualizarfacturaBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ds_Ventas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.visualizarfacturaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.visualizar_facturaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.visualizarfacturaBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -153,8 +129,5 @@
         private System.Windows.Forms.BindingSource visualizarfacturaBindingSource;
         private ds.Ds_Ventas ds_Ventas;
         private ds.Ds_VentasTableAdapters.visualizar_facturaTableAdapter visualizar_facturaTableAdapter;
-        private System.Windows.Forms.BindingSource visualizar_facturaBindingSource;
-        private System.Windows.Forms.BindingSource visualizarfacturaBindingSource1;
-        private System.Windows.Forms.BindingSource visualizarfacturaBindingSource2;
     }
 }

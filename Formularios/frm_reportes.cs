@@ -7,25 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using FACTURA_TEST1.Models;
+using FACTURA_APP.Models;
 using Microsoft.Reporting.WinForms;
 
-namespace FACTURA_TEST1.Formularios
+namespace FACTURA_APP.Formularios
 {
     public partial class frm_reportes : Form
     {
-        DbContextVentas _context;
+        DbContextVentas _context;       
         public frm_reportes()
         {
             InitializeComponent();            
-            _context=new DbContextVentas();
+            _context =new DbContextVentas();
         }
 
         private void Reportes_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'ds_Ventas.visualizar_factura' Puede moverla o quitarla según sea necesario.
             this.visualizar_facturaTableAdapter.Fill(this.ds_Ventas.visualizar_factura,txt_buscarFactura.Text);
-
         }
 
         private void button1_Click(object sender, EventArgs e)

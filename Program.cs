@@ -1,11 +1,11 @@
-﻿using FACTURA_TEST1.Models;
+﻿using FACTURA_APP.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FACTURA_TEST1
+namespace FACTURA_APP
 {
     internal static class Program
     {
