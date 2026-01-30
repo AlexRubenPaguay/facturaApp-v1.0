@@ -361,3 +361,172 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+## Ignorar archivos generados por Visual Studio ##
+
+# Archivos de usuario
+*.user
+*.userosscache
+*.sln.docstates
+
+# Archivos de usuario por proyecto
+*.csproj.user
+*.vbproj.user
+
+# Resultados de compilación
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Archivos de Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Archivos de Team City
+_TeamCity*
+
+# Archivos de dotCover
+*.dotCover
+
+# Archivos de NCrunch
+*.ncrunch*
+.*crunch*.local.xml
+
+# Archivos de InstalShield
+[Ee]xpress/
+
+# Archivos de SQL Server
+*.sql
+*.mdf
+*.ldf
+*.ndf
+
+# Entity Framework Core (si se usa)
+App_Data/
+Migrations/
+
+## Entity Framework específico (para .NET Framework) ##
+
+# Archivos de base de datos local
+*.mdf
+*.ldf
+*.sdf
+
+# Directorios de migraciones de Entity Framework
+Migrations/*.Designer.cs
+Migrations/*.resx
+
+# Configuración de conexiones (puede contener credenciales)
+*.config
+
+## Report Viewer y Reporting ##
+
+# Archivos temporales de Report Viewer
+*.rdlc.data
+*.rdl.data
+
+# Archivos de cache de reportes
+ReportViewerWebControl.axd
+
+# Archivos de configuración de reportes
+*.rdlc.user
+
+## Paquetes NuGet ##
+
+# El directorio de paquetes (packages) no debería ser commiteado
+packages/
+
+# Archivo de bloqueo de NuGet
+packages.lock.json
+
+# Proyectos de referencia NuGet
+*.nuget.props
+*.nuget.targets
+
+## Configuraciones sensibles ##
+
+# Archivos de configuración que pueden contener cadenas de conexión
+Web.config
+App.config
+*.settings
+ConnectionStrings.config
+
+# Opcional: Si quieres excluir pero mantener un template
+!Web.config.example
+!App.config.example
+
+## Archivos temporales y de sistema ##
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Archivos de caché
+*.cache
+
+# Archivos de minidump
+*.dmp
+
+# Archivos de mini dump de VS
+*.minidump
+
+# Archivos de Visual Studio
+*.suo
+*.vssscc
+*.vspscc
+*.vsp
+
+# Archivos de Visual Studio Code
+.vscode/
+
+## Archivos de publicación ##
+
+# Archivos de ClickOnce
+publish/
+
+# Configuración de publicación
+*.pubxml
+*.publishproj
+
+## Otros archivos ##
+
+# Archivos de estilo de código
+*.StyleCop
+
+# Archivos de Test Results
+[Tt]est[Rr]esult*
+[Bb]uild[Ll]og.*
+
+# Archivos de MSTest
+*.trx
+*.TestSettings
+
+# Archivos de Coverage
+*.coverage
+*.coveragexml
+
+# Archivos de Performance
+*.psess
+*.vsp
+*.vspx
+
+# Archivos de Mac
+.DS_Store
+
+# Archivos de Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Archivos de Python (por si acaso)
+__pycache__/
+*.py[cod]
