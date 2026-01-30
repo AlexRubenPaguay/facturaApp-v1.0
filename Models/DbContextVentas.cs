@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Linq;
 
-namespace FACTURA_TEST1.Models
+namespace FACTURA_APP.Models
 {
     public partial class DbContextVentas : DbContext
     {

@@ -1,4 +1,4 @@
-﻿namespace FACTURA_TEST1
+﻿namespace FACTURA_APP
 {
     partial class frm_factura
     {
