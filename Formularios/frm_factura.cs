@@ -77,7 +77,7 @@ namespace FACTURA_APP
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txt_cantidadRegistrado.Text != "" && Convert.ToInt32(txt_cantidadRegistrado.Text) > 0)
+            if (txt_cantidadRegistrado.Text != "" && float.Parse(txt_cantidadRegistrado.Text) > 0)
             {
                 DataGridViewRow row = new DataGridViewRow();
                 row.CreateCells(dgvw_productos);
