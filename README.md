@@ -1,36 +1,36 @@
-Factura App - .NetFramework 4.8
+# Factura App - .NetFramework 4.8
 
-📋 Descripción del Proyecto
+## 📋 Descripción del Proyecto
 
 Este es un ejemplo básico de una factura desarrollado en .NET Framework 4.8 utilizando Windows Forms, Entity Framework para acceso a datos, y Report Viewer para generación de reportes profesionales. La aplicación permite calcular impuestos (IVA) y generar facturas listas para imprimir.
 
-🎯 Características Principales
+## 🎯 Características Principales
 
-✅ Proceso de Facturación
+## ✅ Proceso de Facturación
     Cálculo automático de subtotales e IVA
     Soporte para diferentes tasas impositivas (0%, 15%)
     Generación de números de factura consecutivos
     Cálculo de totales en tiempo real
 
-✅ Reportes y Exportación
+## ✅ Reportes y Exportación
     Report Viewer integrado para visualización
     Formato profesional de facturas
     Capacidad de impresión directa
     Opción para guardar facturas
 
-✅ Interfaz de Usuario
+## ✅ Interfaz de Usuario
     Windows Forms intuitivo
     Validación de datos en tiempo real
     Diseño orientado a la productividad
 
-🖼️ Capturas de Pantalla
-Pantalla Principal de Facturación
+## 🖼️ Capturas de Pantalla
+## Pantalla Principal de Facturación
 <img width="1323" height="632" alt="imagen" src="https://github.com/user-attachments/assets/75c8f2d5-7e46-4398-a5cf-0302255bf950" />
 
-Reporte de Factura
+## Reporte de Factura
 <img width="1027" height="650" alt="imagen" src="https://github.com/user-attachments/assets/dab17099-1c80-4eb2-bca9-b9cac5155e28" />
 
-🏗️ Arquitectura del Proyecto
+## 🏗️ Arquitectura del Proyecto
 - FACTURA_APP/
 - ├── 📁 Formularios/
 - │   ├── frm_factura.cs          # Formulario principal de facturación
@@ -47,8 +47,8 @@ Reporte de Factura
 - │   └── Ds_Ventas.xsd           # DataSet para Report Viewer
 - └── App.config                  # Configuración de conexión
 
-⚙️ Tecnologías Utilizadas
-Tecnología	Versión	Propósito
+## ⚙️ Tecnologías Utilizadas
+## Tecnología	Versión	Propósito
   -  .NET Framework	4.8	Plataforma principal
   -  C#	7.0+	Lenguaje de programación
   -  Entity Framework	6.x	ORM para acceso a datos
@@ -57,10 +57,10 @@ Tecnología	Versión	Propósito
   -  Windows Forms	-	Interfaz gráfica
   -  Git	-	Control de versiones
 
-🚀 Requisitos Previos a la Instalación
+## 🚀 Requisitos Previos a la Instalación
   -  Visual Studio 2019/2022 con soporte para .NET Framework 4.8
   -  SQL Server 2012 o superior
   -  .NET Framework 4.8 Developer Pack
   -  Microsoft Report Viewer 2015+
 
-¡Gracias por utilizar Factura App - .NetFramework 4.8 ! Si tienes alguna duda o problema, no dudes en abrir un issue en GitHub.
+## ¡Gracias por utilizar Factura App - .NetFramework 4.8 ! Si tienes alguna duda o problema, no dudes en abrir un issue en GitHub.
